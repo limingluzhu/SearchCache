@@ -3,6 +3,8 @@
 使用ehcache实现的本地搜索缓存
 
 spring配置:
+
+```xml
 <!-- 设置cache配置项 -->
 <bean name="cacheConfig" class="com.meizu.galaxy2.cache.CacheConfig">
 		<property name="name" value="app4"/> <!-- cache的名称 -->
@@ -15,3 +17,4 @@ spring配置:
 <bean id="cache" name="cache" class="com.meizu.galaxy2.cache.Cache">
 		<constructor-arg name="cacheConfig" ref="cacheConfig"/>
 </bean>
+```
